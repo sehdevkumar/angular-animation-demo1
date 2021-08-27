@@ -1,0 +1,19 @@
+
+<ul class="list-group" >
+    <li class="list-group-item" *ngFor="let list of lists; let i=index"
+    style="cursor: pointer;font-size: large;font-family: Georgia, 'Times New Roman', Times, serif;position: relative;"
+  @fadelist>{{i+1}}. &nbsp; {{list.name}} 
+
+  <img
+
+  (click)="removeItem(i)"
+
+  style="width: 30px;max-height: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  " src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-coloricon-1/21/52-512.png" />
+   
+</li>
+
+</ul>
