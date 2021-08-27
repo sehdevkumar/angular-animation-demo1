@@ -56,8 +56,8 @@ export class AnimationsComponent implements OnInit {
     };
 
     this.service.addItem(obj);
-
-    myInputData.reset();
+    myInputData.reset()
+    myInputData.value.name="";
   }
 
   
